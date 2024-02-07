@@ -1,4 +1,4 @@
-#include "smiol_codes.inc"
+!!#include "smiol_codes.inc"
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! SMIOL -- The Simple MPAS I/O Library
@@ -38,6 +38,7 @@ module SMIOLf
               SMIOLf_get_frame, &
               SMIOLf_f_to_c_string
 
+#include "smiol_codes_f90.inc"
 
     integer, parameter :: SMIOL_offset_kind = c_int64_t   ! Must match SMIOL_Offset in smiol_types.h
 
